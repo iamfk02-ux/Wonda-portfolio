@@ -1,0 +1,373 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1066" width="800" height="1066">
+  <defs>
+    <!-- Background & Canvas Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#080809"/>
+    </linearGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="yellowTile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8E84A"/>
+      <stop offset="100%" stop-color="#C5D638"/>
+    </linearGradient>
+
+    <linearGradient id="creamTile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EFDD"/>
+      <stop offset="100%" stop-color="#E5E1CB"/>
+    </linearGradient>
+
+    <linearGradient id="darkTile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191B18"/>
+      <stop offset="100%" stop-color="#10110F"/>
+    </linearGradient>
+
+    <!-- Photo Portrait Gradient -->
+    <linearGradient id="photoGrad" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#C28766"/>
+      <stop offset="40%" stop-color="#8F5438"/>
+      <stop offset="80%" stop-color="#4A2518"/>
+      <stop offset="100%" stop-color="#1A0D08"/>
+    </linearGradient>
+
+    <!-- Clip Paths for Isometric Tilt -->
+    <clipPath id="workspaceClip">
+      <rect width="800" height="1066" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="1066" fill="#050505"/>
+
+  <!-- Isometric Perspective Transformation Group (Matching BrandIdentity card.png) -->
+  <g transform="translate(15, 30) skewY(-8) scale(0.96, 0.98)">
+    
+    <!-- Outer Application Frame / Canvas -->
+    <rect x="0" y="0" width="770" height="1020" rx="8" fill="#18181A" stroke="#2A2A2E" stroke-width="1.5"/>
+
+    <!-- Left Ruler Area -->
+    <rect x="0" y="0" width="38" height="1020" fill="#1E1E20"/>
+    <line x1="38" y1="0" x2="38" y2="1020" stroke="#333" stroke-width="1"/>
+    
+    <!-- Ruler Tick Marks & Labels -->
+    <g fill="#777" font-family="monospace" font-size="8">
+      <text x="8" y="50" transform="rotate(-90 8,50)">200</text>
+      <line x1="30" y1="50" x2="38" y2="50" stroke="#555" stroke-width="1"/>
+      <text x="8" y="120" transform="rotate(-90 8,120)">400</text>
+      <line x1="30" y1="120" x2="38" y2="120" stroke="#555" stroke-width="1"/>
+      <text x="8" y="190" transform="rotate(-90 8,190)">600</text>
+      <line x1="30" y1="190" x2="38" y2="190" stroke="#555" stroke-width="1"/>
+      <text x="8" y="260" transform="rotate(-90 8,260)">800</text>
+      <line x1="30" y1="260" x2="38" y2="260" stroke="#555" stroke-width="1"/>
+      <text x="8" y="330" transform="rotate(-90 8,330)">1000</text>
+      <line x1="30" y1="330" x2="38" y2="330" stroke="#555" stroke-width="1"/>
+      <text x="8" y="400" transform="rotate(-90 8,400)">1200</text>
+      <line x1="30" y1="400" x2="38" y2="400" stroke="#555" stroke-width="1"/>
+      <text x="8" y="470" transform="rotate(-90 8,470)">1400</text>
+      <line x1="30" y1="470" x2="38" y2="470" stroke="#555" stroke-width="1"/>
+      <text x="8" y="540" transform="rotate(-90 8,540)">1600</text>
+      <line x1="30" y1="540" x2="38" y2="540" stroke="#555" stroke-width="1"/>
+      <text x="8" y="610" transform="rotate(-90 8,610)">1800</text>
+      <line x1="30" y1="610" x2="38" y2="610" stroke="#555" stroke-width="1"/>
+      <text x="8" y="680" transform="rotate(-90 8,680)">2000</text>
+      <line x1="30" y1="680" x2="38" y2="680" stroke="#555" stroke-width="1"/>
+      <text x="8" y="750" transform="rotate(-90 8,750)">2200</text>
+      <line x1="30" y1="750" x2="38" y2="750" stroke="#555" stroke-width="1"/>
+      <text x="8" y="820" transform="rotate(-90 8,820)">2400</text>
+      <line x1="30" y1="820" x2="38" y2="820" stroke="#555" stroke-width="1"/>
+      <text x="8" y="890" transform="rotate(-90 8,890)">2600</text>
+      <line x1="30" y1="890" x2="38" y2="890" stroke="#555" stroke-width="1"/>
+    </g>
+
+    <!-- Top Photoshop Menu Bar -->
+    <rect x="38" y="0" width="732" height="26" fill="#1C1D1F"/>
+    <text x="50" y="17" fill="#AAA" font-family="sans-serif" font-size="10.5" font-weight="500">
+      Select  Layer  Type  Select  Filter  View  Plugins  Window  Help
+    </text>
+
+    <!-- Active File Tab -->
+    <rect x="50" y="26" width="220" height="22" fill="#242528" rx="2"/>
+    <text x="60" y="41" fill="#DDD" font-family="sans-serif" font-size="10" font-weight="500">
+      Luméa Brand Guidelines.psd @ 16.7%
+    </text>
+
+    <!-- Inner Artboard / Canvas Surface -->
+    <rect x="48" y="56" width="710" height="910" fill="#0C0D0E"/>
+
+    <!-- ========================================================
+         PAGE GRID (Matching Exact Layout of Luméa Brand Guidelines)
+         ======================================================== -->
+
+    <!-- ROW 1, COL 1: Page 7 - Beauty Portrait & "Brand Guideline" -->
+    <g transform="translate(60, 68)">
+      <rect width="215" height="150" fill="url(#photoGrad)" rx="2"/>
+      
+      <!-- Abstract Artistic Face Features -->
+      <path d="M 40 80 Q 90 20 150 70 Q 180 110 120 140 Z" fill="#D69C7B" opacity="0.45"/>
+      <circle cx="95" cy="55" r="14" fill="#F4EDE4" opacity="0.85"/>
+      <path d="M 70 115 Q 110 135 145 110" stroke="#FFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+      
+      <!-- Page Tag & Caption -->
+      <text x="10" y="138" fill="#FFF" font-family="sans-serif" font-size="8" opacity="0.75">L - PAGE 7</text>
+      <text x="135" y="125" fill="#D8E84A" font-family="sans-serif" font-size="11" font-weight="700">Brand</text>
+      <text x="135" y="137" fill="#D8E84A" font-family="sans-serif" font-size="10" font-weight="400">Guideline</text>
+    </g>
+
+    <!-- ROW 1, COL 2: Page 8 - Brand Development -->
+    <g transform="translate(290, 68)">
+      <rect width="140" height="150" fill="#F2EFE8" rx="2"/>
+      <text x="10" y="24" fill="#6E7818" font-family="sans-serif" font-size="9" font-weight="700">Brand Development</text>
+      <line x1="10" y1="34" x2="130" y2="34" stroke="#888" stroke-width="1.5" opacity="0.4"/>
+      <line x1="10" y1="42" x2="110" y2="42" stroke="#888" stroke-width="1.5" opacity="0.4"/>
+      <line x1="10" y1="50" x2="125" y2="50" stroke="#888" stroke-width="1.5" opacity="0.4"/>
+      <!-- Flower Petal Motif (Black Outline/Fill) -->
+      <path d="M 80 150 C 80 110 140 100 140 150 Z" fill="#111"/>
+      <path d="M 110 150 C 110 120 140 120 140 150 Z" fill="#222"/>
+      <text x="10" y="142" fill="#555" font-family="sans-serif" font-size="7">L - PAGE 8</text>
+    </g>
+
+    <!-- ROW 1, COL 3: Page 9 - Content Index -->
+    <g transform="translate(445, 68)">
+      <rect width="90" height="150" fill="#EAE7DF" rx="2"/>
+      <!-- Lime Content Block -->
+      <rect x="8" y="10" width="74" height="70" fill="#D8E84A" rx="2"/>
+      <text x="14" y="22" fill="#111" font-family="sans-serif" font-size="7" font-weight="700">CONTENT</text>
+      <text x="14" y="38" fill="#111" font-family="monospace" font-size="8" font-weight="700">01 =  02 =</text>
+      <text x="14" y="54" fill="#111" font-family="monospace" font-size="8" font-weight="700">03 =  04 =</text>
+      <text x="8" y="142" fill="#555" font-family="sans-serif" font-size="7">L - PAGE 9</text>
+    </g>
+
+    <!-- ROW 1, COL 4: Editorial Imagery Cards -->
+    <g transform="translate(550, 68)">
+      <rect width="190" height="150" fill="#141414" rx="2"/>
+      <!-- Beauty hands applying skincare cream -->
+      <rect x="8" y="10" width="80" height="130" fill="#222" rx="2"/>
+      <circle cx="48" cy="65" r="28" fill="#9C6B52" opacity="0.8"/>
+      <rect x="96" y="10" width="84" height="130" fill="#1E2018" rx="2"/>
+      <circle cx="138" cy="55" r="24" fill="#C28766" opacity="0.8"/>
+      <text x="102" y="132" fill="#D8E84A" font-family="sans-serif" font-size="7">ROLE :</text>
+    </g>
+
+    <!-- ROW 2, COL 1: Page 13 - Main Logo & Specs -->
+    <g transform="translate(60, 235)">
+      <rect width="215" height="185" fill="#111210" stroke="#222" stroke-width="1" rx="2"/>
+      <text x="16" y="32" fill="#FFF" font-family="sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">LOGO</text>
+      <line x1="16" y1="46" x2="110" y2="46" stroke="#555" stroke-width="1.5"/>
+      <line x1="16" y1="56" x2="95" y2="56" stroke="#555" stroke-width="1.5"/>
+      <line x1="16" y1="66" x2="105" y2="66" stroke="#555" stroke-width="1.5"/>
+      
+      <!-- Big Lime 6-Petal Floral Logomark -->
+      <g transform="translate(160, 95)">
+        <!-- 6 geometric petals forming circular flower -->
+        <ellipse cx="0" cy="-22" rx="10" ry="16" fill="#D8E84A"/>
+        <ellipse cx="19" cy="-11" rx="10" ry="16" fill="#D8E84A" transform="rotate(60 19 -11)"/>
+        <ellipse cx="19" cy="11" rx="10" ry="16" fill="#D8E84A" transform="rotate(120 19 11)"/>
+        <ellipse cx="0" cy="22" rx="10" ry="16" fill="#D8E84A" transform="rotate(180 0 22)"/>
+        <ellipse cx="-19" cy="11" rx="10" ry="16" fill="#D8E84A" transform="rotate(240 -19 11)"/>
+        <ellipse cx="-19" cy="-11" rx="10" ry="16" fill="#D8E84A" transform="rotate(300 -19 -11)"/>
+      </g>
+      <text x="16" y="172" fill="#777" font-family="sans-serif" font-size="8">L - PAGE 13</text>
+    </g>
+
+    <!-- ROW 2, COL 2: Page 14 - Pure Logomark Showcase -->
+    <g transform="translate(290, 235)">
+      <rect width="140" height="185" fill="#111210" stroke="#222" stroke-width="1" rx="2"/>
+      <text x="12" y="26" fill="#777" font-family="sans-serif" font-size="7.5" font-weight="600" letter-spacing="1">LOGOMARK</text>
+      <!-- Center Floral Symbol -->
+      <g transform="translate(70, 95) scale(0.9)">
+        <ellipse cx="0" cy="-22" rx="10" ry="16" fill="#D8E84A"/>
+        <ellipse cx="19" cy="-11" rx="10" ry="16" fill="#D8E84A" transform="rotate(60 19 -11)"/>
+        <ellipse cx="19" cy="11" rx="10" ry="16" fill="#D8E84A" transform="rotate(120 19 11)"/>
+        <ellipse cx="0" cy="22" rx="10" ry="16" fill="#D8E84A" transform="rotate(180 0 22)"/>
+        <ellipse cx="-19" cy="11" rx="10" ry="16" fill="#D8E84A" transform="rotate(240 -19 11)"/>
+        <ellipse cx="-19" cy="-11" rx="10" ry="16" fill="#D8E84A" transform="rotate(300 -19 -11)"/>
+      </g>
+      <text x="12" y="174" fill="#666" font-family="sans-serif" font-size="7.5">L - PAGE 14</text>
+    </g>
+
+    <!-- ROW 2, COL 3: Page 15 - Luméa Horizontal Wordmark -->
+    <g transform="translate(445, 235)">
+      <rect width="90" height="185" fill="#F2EFE8" rx="2"/>
+      <!-- White lockup container -->
+      <rect x="8" y="14" width="74" height="42" fill="#FFF" rx="2"/>
+      <text x="26" y="38" fill="#111" font-family="sans-serif" font-size="9" font-weight="800">Luméa</text>
+      <!-- Lime lockup container -->
+      <rect x="8" y="64" width="74" height="48" fill="#D8E84A" rx="2"/>
+      <!-- Small icon + wordmark -->
+      <circle cx="24" cy="88" r="7" fill="#111"/>
+      <text x="36" y="91" fill="#111" font-family="sans-serif" font-size="8" font-weight="800">Luméa</text>
+      <text x="8" y="174" fill="#666" font-family="sans-serif" font-size="7">L - PAGE 15</text>
+    </g>
+
+    <!-- ROW 2, COL 4: Packaging & Editorial Column -->
+    <g transform="translate(550, 235)">
+      <rect width="190" height="185" fill="#141416" rx="2"/>
+      <rect x="8" y="12" width="80" height="160" fill="#222" rx="2"/>
+      <circle cx="48" cy="80" r="26" fill="#A87556"/>
+      <rect x="96" y="12" width="84" height="160" fill="#ECE8DD" rx="2"/>
+      <rect x="104" y="24" width="68" height="24" fill="#141414"/>
+      <rect x="104" y="54" width="68" height="24" fill="#D8E84A"/>
+      <text x="104" y="160" fill="#333" font-family="sans-serif" font-size="7">L - PAGE 17</text>
+    </g>
+
+    <!-- ROW 3, COL 1: Page 19 - Quad Brand Tile System (Lime, Cream, Dark) -->
+    <g transform="translate(60, 435)">
+      <rect width="215" height="195" fill="#111210" rx="2"/>
+      
+      <!-- Top Left: Dark background with Lime flower & Luméa wordmark -->
+      <g transform="translate(10, 10)">
+        <rect width="94" height="82" fill="#1A1C16" rx="2"/>
+        <g transform="translate(47, 34) scale(0.48)">
+          <ellipse cx="0" cy="-20" rx="9" ry="14" fill="#D8E84A"/>
+          <ellipse cx="17" cy="-10" rx="9" ry="14" fill="#D8E84A" transform="rotate(60 17 -10)"/>
+          <ellipse cx="17" cy="10" rx="9" ry="14" fill="#D8E84A" transform="rotate(120 17 10)"/>
+          <ellipse cx="0" cy="20" rx="9" ry="14" fill="#D8E84A" transform="rotate(180 0 20)"/>
+          <ellipse cx="-17" cy="10" rx="9" ry="14" fill="#D8E84A" transform="rotate(240 -17 10)"/>
+          <ellipse cx="-17" cy="-10" rx="9" ry="14" fill="#D8E84A" transform="rotate(300 -17 -10)"/>
+        </g>
+        <text x="47" y="62" fill="#FFF" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Luméa</text>
+      </g>
+
+      <!-- Top Right: Yellow background with Black flower & Luméa Skincare -->
+      <g transform="translate(111, 10)">
+        <rect width="94" height="82" fill="#D8E84A" rx="2"/>
+        <g transform="translate(47, 34) scale(0.48)">
+          <ellipse cx="0" cy="-20" rx="9" ry="14" fill="#111"/>
+          <ellipse cx="17" cy="-10" rx="9" ry="14" fill="#111" transform="rotate(60 17 -10)"/>
+          <ellipse cx="17" cy="10" rx="9" ry="14" fill="#111" transform="rotate(120 17 10)"/>
+          <ellipse cx="0" cy="20" rx="9" ry="14" fill="#111" transform="rotate(180 0 20)"/>
+          <ellipse cx="-17" cy="10" rx="9" ry="14" fill="#111" transform="rotate(240 -17 10)"/>
+          <ellipse cx="-17" cy="-10" rx="9" ry="14" fill="#111" transform="rotate(300 -17 -10)"/>
+        </g>
+        <text x="47" y="60" fill="#111" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Luméa</text>
+        <text x="47" y="69" fill="#111" font-family="sans-serif" font-size="5" font-weight="600" text-anchor="middle" letter-spacing="1">SKINCARE</text>
+      </g>
+
+      <!-- Bottom Left: Cream background with Dark flower & Luméa Skincare -->
+      <g transform="translate(10, 98)">
+        <rect width="94" height="82" fill="#F4EFC8" rx="2"/>
+        <g transform="translate(47, 34) scale(0.48)">
+          <ellipse cx="0" cy="-20" rx="9" ry="14" fill="#1A1C16"/>
+          <ellipse cx="17" cy="-10" rx="9" ry="14" fill="#1A1C16" transform="rotate(60 17 -10)"/>
+          <ellipse cx="17" cy="10" rx="9" ry="14" fill="#1A1C16" transform="rotate(120 17 10)"/>
+          <ellipse cx="0" cy="20" rx="9" ry="14" fill="#1A1C16" transform="rotate(180 0 20)"/>
+          <ellipse cx="-17" cy="10" rx="9" ry="14" fill="#1A1C16" transform="rotate(240 -17 10)"/>
+          <ellipse cx="-17" cy="-10" rx="9" ry="14" fill="#1A1C16" transform="rotate(300 -17 -10)"/>
+        </g>
+        <text x="47" y="60" fill="#111" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Luméa</text>
+        <text x="47" y="69" fill="#111" font-family="sans-serif" font-size="5" font-weight="600" text-anchor="middle" letter-spacing="1">SKINCARE</text>
+      </g>
+
+      <!-- Bottom Right: Dark background with Luméa symbol in Cream -->
+      <g transform="translate(111, 98)">
+        <rect width="94" height="82" fill="#151714" rx="2"/>
+        <g transform="translate(47, 34) scale(0.48)">
+          <ellipse cx="0" cy="-20" rx="9" ry="14" fill="#F4EFC8"/>
+          <ellipse cx="17" cy="-10" rx="9" ry="14" fill="#F4EFC8" transform="rotate(60 17 -10)"/>
+          <ellipse cx="17" cy="10" rx="9" ry="14" fill="#F4EFC8" transform="rotate(120 17 10)"/>
+          <ellipse cx="0" cy="20" rx="9" ry="14" fill="#F4EFC8" transform="rotate(180 0 20)"/>
+          <ellipse cx="-17" cy="10" rx="9" ry="14" fill="#F4EFC8" transform="rotate(240 -17 10)"/>
+          <ellipse cx="-17" cy="-10" rx="9" ry="14" fill="#F4EFC8" transform="rotate(300 -17 -10)"/>
+        </g>
+        <text x="47" y="62" fill="#FFF" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Luméa</text>
+      </g>
+
+      <text x="10" y="190" fill="#666" font-family="sans-serif" font-size="7.5">L - PAGE 19</text>
+    </g>
+
+    <!-- ROW 3, COL 2 & 3: Page 20 - Typography (Bricolage, Be Vietnam, Aa Bb Cc) -->
+    <g transform="translate(290, 435)">
+      <rect width="245" height="195" fill="#F5F3EC" rx="2"/>
+      <text x="14" y="24" fill="#333" font-family="sans-serif" font-size="8" font-weight="700">TYPOGRAPHY</text>
+      
+      <text x="14" y="44" fill="#666" font-family="sans-serif" font-size="6.5">Primary font: Be Vietnam</text>
+      <text x="110" y="46" fill="#111" font-family="sans-serif" font-size="14" font-weight="900">Bricolage</text>
+      
+      <!-- Big Giant Alphabet Specimen Aa Bb Cc -->
+      <text x="14" y="125" fill="#111" font-family="sans-serif" font-size="34" font-weight="800">Aa Bb Cc</text>
+      
+      <!-- Secondary font specimen -->
+      <g transform="translate(130, 95)">
+        <text x="0" y="30" fill="#111" font-family="sans-serif" font-size="28" font-weight="500">Aa Bb Cc</text>
+      </g>
+      
+      <text x="14" y="185" fill="#777" font-family="sans-serif" font-size="7.5">L - PAGE 20</text>
+    </g>
+
+    <!-- ROW 3, COL 4: Pattern & Skincare Bottles Grid -->
+    <g transform="translate(550, 435)">
+      <rect width="190" height="195" fill="#161719" rx="2"/>
+      <!-- Geometric Floral Pattern Tile -->
+      <rect x="8" y="10" width="80" height="175" fill="#D8E84A" rx="2"/>
+      <g fill="#111">
+        <circle cx="28" cy="35" r="8"/>
+        <circle cx="68" cy="35" r="8"/>
+        <circle cx="48" cy="70" r="8"/>
+        <circle cx="28" cy="105" r="8"/>
+        <circle cx="68" cy="105" r="8"/>
+        <circle cx="48" cy="140" r="8"/>
+      </g>
+      <!-- Skincare Product Dropper & Bottles -->
+      <rect x="96" y="10" width="84" height="175" fill="#ECE8DC" rx="2"/>
+      <rect x="110" y="50" width="16" height="50" fill="#C5D638" rx="2"/>
+      <rect x="134" y="35" width="22" height="75" fill="#FFFFFF" rx="2"/>
+      <text x="104" y="176" fill="#555" font-family="sans-serif" font-size="7">04 / PRODUCTS</text>
+    </g>
+
+    <!-- ROW 4, COL 1: Visual Assets Title Page -->
+    <g transform="translate(60, 645)">
+      <rect width="215" height="165" fill="#0E100D" rx="2"/>
+      <text x="24" y="95" fill="#FFF" font-family="sans-serif" font-size="14" font-weight="800" letter-spacing="1">VISUAL ASSETS</text>
+    </g>
+
+    <!-- ROW 4, COL 2: Business Cards & Letterhead -->
+    <g transform="translate(290, 645)">
+      <rect width="245" height="165" fill="#EDEAE0" rx="2"/>
+      <text x="14" y="24" fill="#333" font-family="sans-serif" font-size="8" font-weight="700">BUSINESS CARDS</text>
+      <!-- Horizontal Business Card Front -->
+      <rect x="14" y="40" width="105" height="60" fill="#141613" rx="2"/>
+      <circle cx="34" cy="70" r="7" fill="#D8E84A"/>
+      <text x="46" y="73" fill="#FFF" font-family="sans-serif" font-size="8" font-weight="700">Luméa</text>
+      <!-- Business Card Back -->
+      <rect x="126" y="32" width="105" height="60" fill="#E6DFBD" rx="2"/>
+      <circle cx="178" cy="62" r="14" stroke="#887E50" stroke-width="1.5" fill="none"/>
+    </g>
+
+    <!-- ROW 4, COL 3: Editorial Portrait Model -->
+    <g transform="translate(550, 645)">
+      <rect width="190" height="165" fill="#141416" rx="2"/>
+      <circle cx="645" cy="720" r="35" fill="#8F5438"/>
+    </g>
+
+    <!-- ========================================================
+         BOTTOM STATUS BAR & WINDOWS TASKBAR
+         ======================================================== -->
+    <rect x="38" y="956" width="732" height="24" fill="#141517"/>
+    <text x="50" y="972" fill="#888" font-family="sans-serif" font-size="9">
+      25.69%   |   6980 px x 6200 px (300 ppi)
+    </text>
+
+    <!-- Windows Taskbar -->
+    <rect x="0" y="980" width="770" height="40" fill="#080809"/>
+    <!-- Windows 11 Center Start Icon & App Badges -->
+    <g transform="translate(320, 990)">
+      <!-- Windows logo (4 blue squares) -->
+      <rect x="0" y="0" width="9" height="9" fill="#0078D4"/>
+      <rect x="11" y="0" width="9" height="9" fill="#0078D4"/>
+      <rect x="0" y="11" width="9" height="9" fill="#0078D4"/>
+      <rect x="11" y="11" width="9" height="9" fill="#0078D4"/>
+
+      <!-- Search icon -->
+      <circle cx="38" cy="9" r="6" stroke="#0078D4" stroke-width="2" fill="none"/>
+      
+      <!-- Edge, Chrome, Photoshop, Premiere, Illustrator icons -->
+      <circle cx="62" cy="10" r="8" fill="#0078D4"/>
+      <circle cx="84" cy="10" r="8" fill="#EA4335"/>
+      <rect x="100" y="2" width="16" height="16" rx="3" fill="#001E36" stroke="#31A8FF" stroke-width="1.5"/>
+      <text x="103" y="14" fill="#31A8FF" font-family="sans-serif" font-size="9" font-weight="900">Ps</text>
+      <rect x="122" y="2" width="16" height="16" rx="3" fill="#300066" stroke="#EA77FF" stroke-width="1.5"/>
+      <text x="125" y="14" fill="#EA77FF" font-family="sans-serif" font-size="9" font-weight="900">Pr</text>
+      <rect x="144" y="2" width="16" height="16" rx="3" fill="#330000" stroke="#FF9A00" stroke-width="1.5"/>
+      <text x="148" y="14" fill="#FF9A00" font-family="sans-serif" font-size="9" font-weight="900">Id</text>
+    </g>
+  </g>
+</svg>

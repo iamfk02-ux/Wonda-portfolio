@@ -1,0 +1,72 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    match /projects/{id} {
+      allow read: if resource.data.published == true || isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+
+    match /project_sections/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+    match /projectSections/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /project_media/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+    match /projectMedia/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /media_library/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+    match /mediaLibrary/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /services/{id} {
+      allow read: if resource.data.active == true || isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+
+    match /testimonials/{id} {
+      allow read: if resource.data.published == true || isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+
+    match /site_content/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+    match /siteContent/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /site_settings/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+    match /siteSettings/{id} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /test/{docId} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "Studio portfolio project item",
+      "type": "object",
+      "properties": {
+        "slug": { "type": "string" },
+        "title": { "type": "string" },
+        "year": { "type": "string" },
+        "client": { "type": "string" },
+        "industry": { "type": "string" },
+        "role": { "type": "string" },
+        "shortDescription": { "type": "string" },
+        "overview": { "type": "string" },
+        "challenge": { "type": "string" },
+        "concept": { "type": "string" },
+        "outcome": { "type": "string" },
+        "featured": { "type": "boolean" },
+        "published": { "type": "boolean" },
+        "sortOrder": { "type": "number" },
+        "coverMediaId": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["slug", "title", "year", "published", "sortOrder"]
+    },
+    "ProjectSection": {
+      "title": "ProjectSection",
+      "description": "Narrative case study section",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "sectionType": { "type": "string" },
+        "heading": { "type": "string" },
+        "body": { "type": "string" },
+        "sortOrder": { "type": "number" }
+      },
+      "required": ["projectId", "sectionType", "sortOrder"]
+    },
+    "MediaLibraryItem": {
+      "title": "MediaLibraryItem",
+      "description": "Uploaded media metadata",
+      "type": "object",
+      "properties": {
+        "fileName": { "type": "string" },
+        "filePath": { "type": "string" },
+        "fileType": { "type": "string" },
+        "mimeType": { "type": "string" },
+        "altText": { "type": "string" },
+        "width": { "type": "number" },
+        "height": { "type": "number" },
+        "fileSize": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["fileName", "filePath", "fileType", "mimeType", "fileSize"]
+    },
+    "ProjectMedia": {
+      "title": "ProjectMedia",
+      "description": "Attached media for a project gallery",
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "mediaId": { "type": "string" },
+        "sectionId": { "type": "string" },
+        "caption": { "type": "string" },
+        "altText": { "type": "string" },
+        "layout": { "type": "string" },
+        "sortOrder": { "type": "number" }
+      },
+      "required": ["projectId", "mediaId", "layout", "sortOrder"]
+    },
+    "Service": {
+      "title": "Service",
+      "description": "Studio service item",
+      "type": "object",
+      "properties": {
+        "number": { "type": "string" },
+        "title": { "type": "string" },
+        "previewMediaId": { "type": "string" },
+        "sortOrder": { "type": "number" },
+        "active": { "type": "boolean" }
+      },
+      "required": ["number", "title", "sortOrder", "active"]
+    },
+    "Testimonial": {
+      "title": "Testimonial",
+      "description": "Client review / testimonial",
+      "type": "object",
+      "properties": {
+        "quote": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "company": { "type": "string" },
+        "sortOrder": { "type": "number" },
+        "published": { "type": "boolean" }
+      },
+      "required": ["quote", "name", "role", "sortOrder", "published"]
+    },
+    "SiteSetting": {
+      "title": "SiteSetting",
+      "description": "Global studio settings and content",
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "value": { "type": "string" }
+      },
+      "required": ["key"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": "Project",
+      "description": "Collection of studio portfolio projects"
+    },
+    "/project_sections/{sectionId}": {
+      "schema": "ProjectSection",
+      "description": "Sections within project case studies"
+    },
+    "/media_library/{mediaId}": {
+      "schema": "MediaLibraryItem",
+      "description": "Media library assets"
+    },
+    "/project_media/{projectMediaId}": {
+      "schema": "ProjectMedia",
+      "description": "Association between projects and media items"
+    },
+    "/services/{serviceId}": {
+      "schema": "Service",
+      "description": "Studio services list"
+    },
+    "/testimonials/{testimonialId}": {
+      "schema": "Testimonial",
+      "description": "Client testimonials"
+    },
+    "/site_settings/{settingId}": {
+      "schema": "SiteSetting",
+      "description": "Studio settings and configuration"
+    }
+  }
+}

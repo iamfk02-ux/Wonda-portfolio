@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Suisse International', sans-serif;
+    --color-hero-bg: #FFFFFF;
+    --color-dark-bg: #111111;
+    --color-text-light: #F2F2EF;
+    --color-text-dark: #111111;
+    --color-accent: #F05245;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Clean root scrolling without smooth-scroll feedback loops on pinned sections */
+  html {
+    scroll-padding-top: 0px;
+  }
+
+  .snap-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+
+  /* Ultra-disciplined neo-grotesk typography tracking */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.04em;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+.font-grotesk {
+  font-family: var(--font-sans);
+  letter-spacing: -0.04em;
+}
+
+/* Diagonal slashed number stroke effect matching the reference Ø1 */
+.stroke-number {
+  -webkit-text-stroke: 1.25px rgba(242, 242, 239, 0.4);
+  color: transparent;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Editorial Hero Portrait */
+.hero-portrait {
+  /* Natural unclipped cutout */
+}
+
+/* Editorial Hero Text Alpha Mask: Masks white text strictly to the portrait cutout */
+.hero-portrait-mask {
+  -webkit-mask-image: url('/WonderfulB-portrait.png');
+  mask-image: url('/WonderfulB-portrait.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center bottom;
+  mask-position: center bottom;
+  -webkit-mask-size: auto 86vh;
+  mask-size: auto 86vh;
+}
+
+@media (min-width: 640px) {
+  .hero-portrait-mask {
+    -webkit-mask-position: center bottom;
+    mask-position: center bottom;
+    -webkit-mask-size: auto 90vh;
+    mask-size: auto 90vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-portrait-mask {
+    -webkit-mask-position: center bottom;
+    mask-position: center bottom;
+    -webkit-mask-size: auto 93vh;
+    mask-size: auto 93vh;
+  }
+}
+
+/* Accessibility: Respect user prefers-reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom Cursor: hide default OS arrow over project cards to display 'View Project' pop-up cursor */
+@media (hover: hover) and (pointer: fine) {
+  .project-card,
+  .project-card *,
+  [data-project-card],
+  [data-project-card] * {
+    cursor: none !important;
+  }
+}
+
+/* Project card: Smooth scale(1.05) transform on hover with strictly hidden overflow */
+.project-card {
+  overflow: hidden !important;
+}
+
+.project-card img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform;
+}
+
+.project-card:hover img,
+.group:hover .project-card img {
+  transform: scale(1.05) !important;
+}
+
+/* Subtle mid-air floating animation for selected projects showcase */
+@keyframes floatAir {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(0.35deg);
+  }
+}
+
+.animate-float-air {
+  animation: floatAir 5.5s ease-in-out infinite;
+}
+
